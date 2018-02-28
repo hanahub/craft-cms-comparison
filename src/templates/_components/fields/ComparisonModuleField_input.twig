@@ -1,0 +1,24 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Comparison module for Craft CMS 3.x
+ *
+ * ComparisonModuleField Field Input
+ *
+ * @author    Austin Smith
+ * @copyright Copyright (c) 2018 Austin Smith
+ * @link      asmith.com
+ * @package   ComparisonModule
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{{ forms.textField({
+        label: 'Some Field',
+        instructions: 'Enter some text here.',
+        id: name,
+        name: name,
+        value: value})
+}}

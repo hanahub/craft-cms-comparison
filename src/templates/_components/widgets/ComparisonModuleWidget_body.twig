@@ -1,0 +1,20 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Comparison module for Craft CMS
+ *
+ * ComparisonModuleWidget Widget Body
+ *
+ * @author    Austin Smith
+ * @copyright Copyright (c) 2018 Austin Smith
+ * @link      asmith.com
+ * @package   ComparisonModule
+ * @since     1.0.0
+ */
+#}
+
+{% set iconUrl = view.getAssetManager().getPublishedUrl('@comparison-module/assetbundles/comparisonmodulewidgetwidget/dist', true) ~ '/img/ComparisonModuleWidget-icon.svg' %}
+
+<img src="{{ iconUrl }}" height="64" width="64" />
+
+<p>{{ message }}</p>

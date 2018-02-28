@@ -1,0 +1,26 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Comparison module for Craft CMS
+ *
+ * ComparisonModuleField Field Settings
+ *
+ * @author    Austin Smith
+ * @copyright Copyright (c) 2018 Austin Smith
+ * @link      asmith.com
+ * @package   ComparisonModule
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("modules\\comparisonmodule\\assetbundles\\comparisonmodule\\ComparisonModuleAsset") %}
+
+{{ forms.textField({
+    label: 'Some Attribute',
+    instructions: 'Enter some attribute here.',
+    id: 'someAttribute',
+    name: 'someAttribute',
+    value: field['someAttribute']})
+}}
